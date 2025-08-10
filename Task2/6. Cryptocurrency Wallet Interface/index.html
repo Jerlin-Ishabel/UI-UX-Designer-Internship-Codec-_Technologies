@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wallet-container">
+    <h1>🪙 My Crypto Wallet</h1>
 
+    <section class="balance-section">
+      <h2>Balances</h2>
+      <ul id="balances"></ul>
+    </section>
+
+    <section class="transaction-section">
+      <h2>Recent Transactions</h2>
+      <ul id="transactions"></ul>
+    </section>
+
+    <section class="security-section">
+      <h2>Security</h2>
+      <button onclick="showSecurityPrompt()">🔒 Enable 2FA</button>
+    </section>
+  </div>
+
+  <div id="securityPrompt" class="modal hidden">
+    <p>Enable Two-Factor Authentication for enhanced security?</p>
+    <button onclick="enable2FA()">Yes</button>
+    <button onclick="closePrompt()">No</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
