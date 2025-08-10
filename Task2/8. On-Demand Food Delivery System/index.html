@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🍔 QuickBite Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>🍔 QuickBite Delivery</h1>
 
+    <section class="menu">
+      <h2>Menu</h2>
+      <ul id="menuList"></ul>
+    </section>
+
+    <section class="cart">
+      <h2>Your Order 🧾</h2>
+      <ul id="cartList"></ul>
+      <p id="totalPrice">Total: ₹0</p>
+      <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <section class="status">
+      <h2>Delivery Status 🚚</h2>
+      <p id="statusText">No order placed.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
