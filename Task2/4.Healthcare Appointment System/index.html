@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare Appointment System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Healthcare Appointment System</h1>
+  </header>
 
+  <main>
+    <section class="user-profile">
+      <h2>Your Profile</h2>
+      <label>Name:</label>
+      <input type="text" id="userName" placeholder="Enter your name" />
+      <label>Email:</label>
+      <input type="email" id="userEmail" placeholder="Enter your email" />
+      <label>Age:</label>
+      <input type="number" id="userAge" placeholder="Enter your age" />
+      <button onclick="saveUserProfile()">Save Profile</button>
+    </section>
+
+    <section class="appointment-form">
+      <h2>Book Appointment</h2>
+      <label for="doctor">Choose Doctor:</label>
+      <select id="doctor">
+        <option>Dr. Smith</option>
+        <option>Dr. Patel</option>
+        <option>Dr. Lee</option>
+        <option>Dr. Mehta</option>
+        <option>Dr. Fernandez</option>
+        <option>Dr. Gupta</option>
+        <option>Dr. Thompson</option>
+        <option>Dr. Nakamura</option>
+        <option>Dr. Adebayo</option>
+        <option>Dr. Rossi</option>
+      </select>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" />
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" />
+
+      <button onclick="bookAppointment()">Book Appointment</button>
+    </section>
+
+    <section id="confirmation"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
