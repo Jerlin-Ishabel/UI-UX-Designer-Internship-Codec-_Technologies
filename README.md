@@ -50,6 +50,23 @@ Track and display fitness stats visually.
 
 ---
 
+## 📂 Project List
+
+| S.No | Project Title | Objective | Key Focus Areas |
+|------|--------------|-----------|-----------------|
+| 1 | **Smart Home Control Dashboard** | Design an intuitive dashboard for managing smart home devices (lights, thermostats, security). | Accessibility, responsive design, real-time status updates |
+| 2 | **AI-Powered Job Search Platform** | Create a user-friendly interface for a job portal that suggests jobs based on user profiles and preferences. | Personalized UX, advanced search filters, smooth navigation |
+| 3 | **E-Learning Platform Redesign** | Reimagine an online learning platform with improved navigation and better course engagement. | User onboarding, progress tracking, multimedia content display |
+| 4 | **Healthcare Appointment System** | Build a seamless appointment scheduling platform for patients and doctors. | Calendar integration, appointment reminders, user profiles |
+| 5 | **Travel Itinerary Planner** | Design a platform to help users plan and visualize travel routes and bookings. | Interactive maps, trip customization, user collaboration |
+| 6 | **Cryptocurrency Wallet Interface** | Create a secure and user-friendly cryptocurrency wallet. | Transaction tracking, multi-currency support, security prompts |
+| 7 | **Personal Finance Management App** | Design an application to help users track expenses and manage budgets. | Data visualization, user analytics, expense categorization |
+| 8 | **On-Demand Food Delivery System** | Build an intuitive UI for a food delivery app with real-time tracking. | Order customization, delivery status updates, UX optimization |
+| 9 | **Digital Wellbeing Dashboard** | Design a platform to monitor screen time and promote digital wellness. | Interactive reports, activity insights, habit-forming notifications |
+| 10 | **Online Collaborative Whiteboard** | Create an interactive whiteboard for remote collaboration. | Real-time updates, multimedia integration, intuitive UX |
+
+----
+
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **APIs Used:** OpenWeather API, Recipe API, Movie Database API
