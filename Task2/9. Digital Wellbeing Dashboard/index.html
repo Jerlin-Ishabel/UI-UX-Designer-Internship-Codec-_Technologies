@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📱 Digital Wellbeing Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h1>📱 Digital Wellbeing Dashboard</h1>
 
+    <section class="report">
+      <h2>Interactive Screen Time Report</h2>
+      <canvas id="screenTimeChart"></canvas>
+    </section>
+
+    <section class="insights">
+      <h2>Activity Insights</h2>
+      <form id="insightForm">
+        <input type="text" id="insightInput" placeholder="Enter your insight..." required />
+        <button type="submit">Add Insight</button>
+      </form>
+      <ul id="insightList"></ul>
+    </section>
+
+    <section class="notifications">
+      <h2>Habit-Forming Notifications</h2>
+      <button onclick="sendReminder()">Send Wellness Reminder</button>
+      <p id="reminderText">No reminder sent yet.</p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
