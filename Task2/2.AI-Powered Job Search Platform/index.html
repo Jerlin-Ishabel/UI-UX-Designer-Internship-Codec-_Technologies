@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Job Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Job Finder</h1>
+    <input type="text" id="searchInput" placeholder="Search jobs..." />
+  </header>
 
+  <aside class="filters">
+    <h2>Filters</h2>
+    <label>Location: <input type="text" id="locationFilter" /></label>
+    <label>Job Type:
+      <select id="typeFilter">
+        <option value="">Any</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Remote">Remote</option>
+        <option value="Internship">Internship</option>
+        <option value="Part-time">Part-time</option>
+        <option value="Contract">Contract</option>
+        <option value="Freelance">Freelance</option>
+      </select>
+    </label>
+    <button onclick="applyFilters()">Apply Filters</button>
+  </aside>
+
+  <main id="jobList">
+    <!-- Job cards will be injected here -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
