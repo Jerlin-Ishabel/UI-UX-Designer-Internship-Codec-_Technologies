@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Home Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <button id="themeToggle">🌙 Toggle Dark Mode</button>
 
+  <div class="container">
+    <nav class="sidebar">
+      <h2><i class="fas fa-sliders-h"></i> Menu</h2>
+      <ul>
+        <li onclick="toggleSection('lights')"><i class="fas fa-lightbulb"></i> Lights</li>
+        <li onclick="toggleSection('thermostat')"><i class="fas fa-temperature-low"></i> Thermostat</li>
+        <li onclick="toggleSection('security')"><i class="fas fa-shield-alt"></i> Security</li>
+        <li onclick="toggleSection('energy')"><i class="fas fa-bolt"></i> Energy</li>
+      </ul>
+    </nav>
+
+    <div class="dashboard">
+      <h1><i class="fas fa-house-user"></i> Smart Home Control</h1>
+
+      <section class="card" id="lights">
+        <h2><i class="fas fa-lightbulb"></i> Lights</h2>
+        <div class="toggle-group">
+          <label><input type="checkbox" checked /> <i class="fas fa-home"></i> All Lights</label>
+          <label><input type="checkbox" checked /> <i class="fas fa-couch"></i> Living Room</label>
+          <label><input type="checkbox" checked /> <i class="fas fa-utensils"></i> Kitchen</label>
+          <label><input type="checkbox" checked /> <i class="fas fa-bed"></i> Bedroom</label>
+          <label><input type="checkbox" /> <i class="fas fa-shower"></i> Bathroom</label>
+        </div>
+      </section>
+
+      <section class="card" id="thermostat">
+        <h2><i class="fas fa-temperature-low"></i> Thermostat</h2>
+        <div class="thermostat">
+          <button onclick="adjustTemp(-1)">−</button>
+          <span id="tempDisplay">72° (Cooling)</span>
+          <button onclick="adjustTemp(1)">+</button>
+        </div>
+      </section>
+
+      <section class="card" id="security">
+        <h2><i class="fas fa-shield-alt"></i> Security</h2>
+        <div class="toggle-group">
+          <p>Secure ✅</p>
+          <label><input type="checkbox" checked /> <i class="fas fa-door-closed"></i> Front Door</label>
+          <label><input type="checkbox" checked /> <i class="fas fa-warehouse"></i> Garage</label>
+          <label><input type="checkbox" checked /> <i class="fas fa-video"></i> Cameras</label>
+        </div>
+        <button class="action-btn" onclick="lockAll()">🔒 Lock All</button>
+        <button class="action-btn" onclick="unlockAll()">🔓 Unlock All</button>
+        <p id="lockStatus">Status: Unlocked</p>
+      </section>
+
+      <section class="card" id="energy" style="display: none;">
+        <h2><i class="fas fa-bolt"></i> Energy Usage</h2>
+        <canvas id="energyChart" width="400" height="200"></canvas>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
