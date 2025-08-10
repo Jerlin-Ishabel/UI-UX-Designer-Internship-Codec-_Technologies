@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collaborative Whiteboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <select id="toolSelector">
+      <option value="brush">🖌️ Brush</option>
+      <option value="pencil">✏️ Pencil</option>
+      <option value="eraser">🧽 Eraser</option>
+      <option value="fill">🎨 Fill</option>
+      <option value="scale">📏 Scale</option>
+      <option value="align">📐 Align</option>
+    </select>
+    <input type="color" id="colorPicker" />
+    <input type="range" id="brushSize" min="1" max="20" value="5" />
+    <button onclick="clearBoard()">🧹 Clear</button>
+    <input type="file" id="imageUpload" accept="image/*" />
+  </div>
+  <canvas id="whiteboard"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
