@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Shoppy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🛍️ Shop With Us</h1>
+  </header>
 
+  <main class="products-container">
+    <section class="product-card">
+      <img src="D:\intern\ecommerce-product-page\assests\images\product2.jpg" alt="Stylish navy T-Shirt" class="product-img">
+      <h2>Stylish T-Shirt</h2>
+      <p class="price">₹499</p>
+      <p class="desc">Made from premium cotton. Comfortable and perfect for all seasons.</p>
+      <button class="cart-btn" onclick="addToCart('Stylish T-Shirt')">Add to Cart 🛒</button>
+    </section>
+
+    <section class="product-card">
+      <img src="D:\intern\ecommerce-product-page\assests\images\product3.jpg" alt="Trendy white Sneakers" class="product-img">
+      <h2>Trendy Sneakers</h2>
+      <p class="price">₹999</p>
+      <p class="desc">Ultra-comfy sneakers for everyday use. Stylish and durable.</p>
+      <button class="cart-btn" onclick="addToCart('Trendy Sneakers')">Add to Cart 🛒</button>
+    </section>
+  </main>
+
+  <div id="cart-message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
