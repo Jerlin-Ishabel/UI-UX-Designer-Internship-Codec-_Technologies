@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 LearnX</h1>
+    <p>Your personalized learning dashboard</p>
+  </header>
 
+  <section class="onboarding">
+    <h2>Welcome, Learner!</h2>
+    <p>Select your interests to get started:</p>
+    <div class="tags">
+      <button data-interest="Web Development">Web Development</button>
+      <button data-interest="Data Science">Data Science</button>
+      <button data-interest="AI & ML">AI & ML</button>
+      <button data-interest="Design">Design</button>
+    </div>
+  </section>
+
+  <section class="courses">
+    <h2>📘 Your Courses</h2>
+    <div id="courseList"></div>
+  </section>
+
+  <section class="media">
+    <h2>🎥 Featured Lesson</h2>
+    <div id="featuredVideo"></div>
+  </section>
+
+  <!-- Modal for course video -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <div id="videoContainer"></div>
+      <div class="progress-bar">
+        <div id="videoProgress" class="progress-fill"></div>
+      </div>
+      <p id="videoPercent">0% watched</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

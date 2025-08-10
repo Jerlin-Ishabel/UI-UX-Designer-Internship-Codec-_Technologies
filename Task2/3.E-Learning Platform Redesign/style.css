@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9fbff;
+}
+
+header {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tags button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tags button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.course-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #eef4ff;
+}
+
+.progress-bar {
+  background-color: #eee;
+  height: 10px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.progress-fill {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
