@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Itinerary Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+</head>
+<body>
+  <header>
+    <h1>Travel Itinerary Planner</h1>
+  </header>
+
+  <main>
+    <section class="trip-form">
+      <h2>Customize Your Trip</h2>
+      <label>Destination:</label>
+      <input type="text" id="destination" placeholder="e.g., Paris" />
+
+      <label>Start Date:</label>
+      <input type="date" id="startDate" />
+
+      <label>End Date:</label>
+      <input type="date" id="endDate" />
+
+      <label>Transport Mode:</label>
+      <select id="transportMode">
+        <option>Flight</option>
+        <option>Train</option>
+        <option>Car</option>
+        <option>Bus</option>
+      </select>
+
+      <label>Budget Estimate:</label>
+      <input type="text" id="budgetEstimate" placeholder="e.g., ₹50,000" />
+
+      <label>Collaborators (comma-separated emails):</label>
+      <input type="text" id="collaborators" placeholder="you@example.com, friend@example.com" />
+
+      <label>Activities:</label>
+      <textarea id="activities" placeholder="List your activities..."></textarea>
+
+      <label>Notes:</label>
+      <textarea id="notes" placeholder="Any special instructions..."></textarea>
+
+      <button onclick="saveTrip()">Save Itinerary</button>
+    </section>
+
+    <section id="map">
+      <h2>Map Preview</h2>
+      <div class="map-placeholder">🗺️ Map will appear here</div>
+      <div id="map" style="height: 300px;"></div>
+
+    </section>
+
+    <section id="trip-summary"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
